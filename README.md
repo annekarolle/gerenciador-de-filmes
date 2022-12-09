@@ -1,6 +1,17 @@
 # M5 - Kenzie Buster
 
-## Instalação dos pacotes de teste
+Nesse projeto, exercitamos o conteúdo aprendido de Django para desenvolver uma API que gerencia filmes e compras de filmes. 
+Foi desenvolvido nessa aplicação usuário custumizado a partir do User Padrão do Django, filmes e compras, incluindo autenticação, permissionamento de rotas para diferentes tipos de usuários e paginação na rota de listagem de filmes.
+
+## Tecnologias
+
+<div>
+<img align="center" alt="css" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img align="center" alt="css" src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white">
+</div>
+
+<details>
+  <summary>Instalação e Rodando pacotes de teste</summary>
 
 - Verifique se os pacotes `pytest` e/ou `pytest-testdox` estão instalados globalmente em seu sistema:
 ```shell
@@ -72,3 +83,5 @@ pytest --testdox -vvs tests/tarefas/t3/
 ```python
 pytest --testdox -vvs tests/tarefas/t4/
 ```
+
+</details>
