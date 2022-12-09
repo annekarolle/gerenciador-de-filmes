@@ -27,15 +27,13 @@ class MovieView(APIView, CustomPageNumberPagination):
 
         return Response(serializer.data, status.HTTP_201_CREATED)
 
-    def get(self, request: Request) -> Response:       
+    def get(self, request: Request) -> Response:
 
         movies = Movie.objects.all()
+        serializer = MovieSerializer(movies, many=True)
 
-        pages = self.paginate_queryset(movies, request, view=self)
+        return Response(serializer.data)
 
-        serializer = MovieSerializer(pages, many=True)
-
-        return self.get_paginated_response(serializer.data)
 
 
 class MovieViewDetail(APIView):
